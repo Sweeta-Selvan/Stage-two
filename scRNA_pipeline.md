@@ -56,7 +56,6 @@ BIOLOGICAL INTERPRETATION OF CELLS
 
 #Hematopoietic Stem Cells -Self-renewing stem cells that generate all blood and immune cell lineages
 
-=================================================================================================================================================================================================================
 Expected vs missing lineage populations
 =
 
