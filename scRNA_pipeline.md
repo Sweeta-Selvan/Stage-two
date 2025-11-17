@@ -24,7 +24,7 @@ step 17 : Leiden clustering at different resolutions is plotted using umap
 step 18 : Using decoupler, the marker genes are imported and compared with genes of our cluster.
 step 19 : after comparision, the clusters are biologically defined by ranking genes.
 step 20 : Finally, Clusters are annotated as distinct cell types.
-
+CELL TYPES IDENTIFIED
 The cluster annotations are
  Cell Type                 Clusters  
  Neutrophils              | 0        
@@ -37,9 +37,7 @@ The cluster annotations are
  Plasma cells             | 9        
  Hematopoietic stem cells | 11       
 
-
-
-
+BIOLOGICAL INTERPRETATION OF CELLS
 #Neutrophils -Fast first-responders that kill microbes using phagocytosis, ROS, and granule enzymes.
 
 #Monocytes -Circulate in blood and become macrophages/dendritic cells to clear pathogens and drive inflammation.
@@ -111,3 +109,31 @@ Healthy or infected
 nuocytes, b cells naive, gamma delta T cells , neutrophils are top  four abundant cell clusters, indicating the sample is from infected  patient. Presence of these cells indicates allergic environment.
 neutrophils > monocytes with NK cells comparable to neutrophils — points to an innate -inflammation.The lack of a large monocyte expansion and absence of a clear activated-NK transcriptional signature 
 (cytotoxic genes) would favour mild-to-moderate inflammation or contamination.
+
+How to run notebook
+=
+
+This notebook implements a complete single-cell RNA-seq (scRNA-seq) analysis workflow using Python and Scanpy. The goal is to preprocess raw scRNA-seq data, perform clustering and dimensionality reduction, annotate cell types, and extract meaningful biological insights.
+
+How to Run in Google Colab
+-Open the Notebook
+-Upload your notebook file to Colab or open it directly from GitHub.
+-Install Required Packages
+-Install Python packages such as Scanpy, Anndata, and plotting libraries (Matplotlib, Seaborn).
+
+Upload Your Data
+-Upload your raw count matrices or preprocessed files to Colab.
+-Run Notebook Cells Sequentially
+-Start from the top and execute cells in order to ensure all dependencies are loaded.
+-The pipeline will automatically perform quality control, normalization, feature selection, clustering, and visualization.
+
+View Results
+-UMAP and PCA plots show cluster separation.
+-Cluster labels and cell-type annotations provide biological insight.
+-Save or Download Results
+-Save the processed data for future analysis.
+-Download plots and tables as images or spreadsheets if needed.
+
+Always run cells in order to avoid errors.
+Adjust filtering thresholds, highly variable gene selection, and clustering resolution based on the dataset.
+For large datasets, we can mount Google Drive to read and save files directly, avoiding repeated uploads.
